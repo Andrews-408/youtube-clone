@@ -62,7 +62,7 @@ const VideoDetails = () => {
                   </Box>
                </Box> 
                <Box px={2} py={{md: 1, xs: 5}} justifyContent='center' 
-                 alignItems='center'>
+                 alignItems='center' height='500px' overflow='scroll'>
                     <Video videos={videos} direction = 'column'/>
                </Box>
             </Stack>

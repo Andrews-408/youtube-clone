@@ -13,6 +13,7 @@ const Navbar = () => (
     >
         <Link to='/' style={{display: 'flex',alignItems: 'center'}}>
             <img src={logo} alt='logo' height={45}/>
+            <span style={{color: 'white', fontFamily:'cursive'}}>YA MEDIA</span>
         </Link>
         <SearchBar />
     </Stack>

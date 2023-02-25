@@ -9,11 +9,11 @@ import { demoChannelTitle, demoThumbnailUrl, demoVideoTitle,
 const VideoCard: React.FC<VideoType>= ({videoDetails}) => {
     const {id, snippet} = videoDetails
     return (
-        <Card sx={{width: {md: '320px', xs: '100%'}, boxShadow: 'none' , borderRadius: 0}}>
+        <Card sx={{width: { xs: '100%', sm:'358px', md:'320px'}, boxShadow: 'none' , borderRadius: 0}}>
             <Link to={id.videoId ? `/video/${id.videoId}`: demoVideoUrl}>
                 <CardMedia 
                     image={snippet?.thumbnails?.high?.url || demoThumbnailUrl}
-                    sx={{width: 358, height: 180}}
+                    sx={{width: {sx: '100%', sm:'358px', md:'320px'}, height: 180}}
                     />
             </Link>
             <CardContent sx={{backgroundColor: '#1e1e1e',
